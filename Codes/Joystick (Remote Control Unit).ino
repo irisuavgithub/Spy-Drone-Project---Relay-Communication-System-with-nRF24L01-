@@ -32,7 +32,6 @@ void setup() {
   radio.stopListening();
 }
 void loop() {
-d 
 
   radio.write(&data, sizeof(data)); 
 
