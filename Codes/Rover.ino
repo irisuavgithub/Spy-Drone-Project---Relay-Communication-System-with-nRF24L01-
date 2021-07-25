@@ -65,12 +65,8 @@ void loop() {
     int left = map(Y,499,0,0,255);
     int derece = map(Z, 0, 1023, 0, 180);
      motor.write(derece);
-    if(X < 500 && X > 490 && Y < 505 && Y > 496){
-      analogWrite(OUT4, LOW);
-      analogWrite(OUT3, LOW);
-      analogWrite(OUT2, LOW);
-      analogWrite(OUT1, LOW);
-    }else if(X < 490 && (Y < 505 && Y > 496)){
+    
+    if(X < 490 && (Y < 505 && Y > 496)){
       analogWrite(OUT4, backward);
       analogWrite(OUT3, 0);
       analogWrite(OUT2, 0);
